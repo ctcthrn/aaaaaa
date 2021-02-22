@@ -11,9 +11,13 @@ std::cout<<"number of digits - "<<nn<<std::endl;
 	int nz=n;
 for(k=1;k<nn+1;k++){
 	xx = x/(n/10);
-	std::cout<<xx<<"*"<<n/10<<std::endl;
+	std::cout<<xx<<"*"<<n/10;
 	x = x%(n/10);
 	n = n/10;
+if(k<nn){
+	std::cout<<"+";
+}
+		
 } 
 
 }
