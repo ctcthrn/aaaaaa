@@ -8,7 +8,7 @@ int main(){
 	int Help;
 	
 	cin>>n;
-	
+	s1=0; s2=0;
 	for (int k=0; k<n ; k++){
 		Big[k]=rand()%10;
 		cout<<Big[k]<<" ";
