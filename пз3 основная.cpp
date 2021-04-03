@@ -16,23 +16,27 @@ int main(){
 	
 	cout<<" "<<endl;
 	
-	for (int i=0; i<n; i++){
-		for (int j=0; j<n-i; j++){
+	for (int i=0; i<n-1; i++){
+		for (int j=0; j<n-1-i; j++){
 			if (Big[j]>Big[j+1]){
 					Help=Big[j+1];
 					Big[j+1]=Big[j];
 					Big[j]=Help;
 			}
-			else {
-				for (int j=n; j<n-i; j--){
-					if (Big[j]>Big[j-1]){
-						Help=Big[j-1];
-						Big[j-1]=Big[j];
-						Big[j]=Help;
-					}
+
+			for (int j=n; j<n-1-i; j--){
+				if (Big[j]>Big[j-1]){
+					Help=Big[j-1];
+					Big[j-1]=Big[j];
+					Big[j]=Help;
 				}
 			}
 		}
+	}
+	for (int k=0; k<n ; k++){
+		cout<<Big[k]<<" ";
+	}	
+}
 	}
 	for (int k=0; k<n ; k++){
 		cout<<Big[k]<<" ";
