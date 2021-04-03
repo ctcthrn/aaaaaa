@@ -33,12 +33,9 @@ int main(){
 			}
 		}
 	}
+	
 	for (int k=0; k<n ; k++){
 		cout<<Big[k]<<" ";
 	}	
 }
-	}
-	for (int k=0; k<n ; k++){
-		cout<<Big[k]<<" ";
-	}	
-}
+	
