@@ -1,4 +1,4 @@
-//пз1 базовая задача
+//пз1
 #include <iostream>
 int main(){
 	int x,xx,a,b,k;
